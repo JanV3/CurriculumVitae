@@ -1,0 +1,104 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Ján}
+\familyname{Valiska}
+\title{Životopis}               % optional, remove the line if not wanted
+\address{Vŕbnica 49}{07216}    % optional, remove the line if not wanted
+\mobile{+421--903--982--676}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+%\email{jan.valiska@gmail.com}                      % optional, remove the line if not wanted
+\email{jan.valiska@tuke.sk\\jan.valiska@gmail.com}
+%\homepage{homepage (optional)}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Vzdelanie}
+\cventry{2011--súčastnosť}{Vysoká škola}{Fakulta elektrotechniky a informatiky}{TUKE Košice}{\textit{3.stupeň}}{Telekomunikácie}  % arguments 3 to 6 can be left empty
+\cventry{2009--2011}{Vysoká škola}{Fakulta elektrotechniky a informatiky}{TUKE Košice}{\textit{2.stupeň}}{Multimediálne telekomunikácie}  % arguments 3 to 6 can be left empty
+\cventry{2005--2009}{Vysoká škola}{Fakulta elektrotechniky a informatiky}{TUKE Košice}{\textit{1.stupeň}}{Telekomunikácie}  % arguments 3 to 6 can be left empty
+\cventry{2001--2005}{Stredná škola}{SPŠE}{Michalovce}{Oznamovacia technika}{}
+\cventry{1996--2001}{Základná škola}{CZŠ sv.Michala}{Michalovce}{\textit{2.stupeň}}{4--9. ročník}
+\cventry{1992--1996}{Základná škola}{ZŠ}{Vŕbnica}{\textit{1.stupeň}}{1--4.ročník}
+
+\section{Diplomová práca}
+\cvline{Názov}{\emph{Štruktúra tokov v MPEG-2}}
+\cvline{Vedúci práce}{Prof. Ing. Dušan Levický, CSc.}
+\cvline{Popis}{Práca popisuje základnú štruktúru transportného, programového,  paketizovaného elementárneho toku a štruktúru jednotlivých tabuliek v TS multiplexy štandardu MPEG-2}
+
+\section{Jazyky}
+\cvline{Anglický jazyk}{pokročilý--technická angličtina}
+
+
+\section{Počitačové znalosti}
+\cvcomputer{Operačné systémy}{GNU Linux, MS Windows, Dos, FreeBSD}{Typografia}{\LaTeX, MS Office, OpenOffice}
+\cvcomputer{Programovanie}{Bash/Zsh, Python, C/C++, Qt, Matlab, Ruby, Perl}{Tvorba webu}{PHP, Nette Framework, HTML, jQuery, MySQL}
+
+\section{Oprávnenia a certifikáty}
+\cvlistitem[-]{Vodičský preukaz typu: B1, B, AM}
+\cvlistitem[-]{Cisco Certified Network Assocciate(1-4.semester)}
+
+\newpage
+\section{Oblasť štúdia}
+\cvline{Téma dizertačnej práce}{Implementácia rôznych metód pre sledovanie objektov vo videosekvenciách na báze \emph{Bayesovských filtrov} a testovanie ich robustnosti voči chybám vo videosekvenciách.}
+\cvline{Modelovanie kanálov}{Simulovanie reálnych drôtových a bezdrôtových sieti, pomocou jadrového modulu netem v operačnom systéme \emph{Linux}.}
+
+\section{Záujmy}
+\cvline{OS Linux}{Dlhoročné skúsenosti s operačným systémom \emph{Linux}.
+Tvorba vlastných pomocných skriptov/programov v \emph{Bash}, \emph{Python}, a \emph{C/C++} jazyku. Automatizácia procesov. Uľahčovanie si periodicky opakujúcich sa úloh, procesov a pod\dots}
+\cvline{Tvorba webových stránok}{Najradšej využívam moderné technológie a frameworky, hlavne \textit{PHP Nette} a \textit{jQuery}.}
+\cvline{Otvorený softvér}{Propagujem otvorený softvér, ktorý si podľa môjho názoru
+vystačí nielen so základnými požiadavkami.}
+\cvline{Počitačové siete}{Záujem o rozvíjanie vedomostí v tejto oblasti a štúdium \emph{CCNP}.}
+\cvline{Voľný čas}{Rodina, literatúra, zmysluplný film.}
+
+\section{Osobné informácie}
+\cvline{Dátum narodenia}{\textit{14.10.1986} v Michalovciach}
+\cvline{Zdravotný stav}{dobrý}
+\cvline{Rodinný stav}{slobodný, bezdetný}
+
+%\nocite{*}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

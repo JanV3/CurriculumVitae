@@ -1,0 +1,24 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2012/dev/Arch Linux) (format=pdfcslatex 2012.2.6)  6 MAR 2012 00:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**asdf.tex
+(./asdf.tex
+LaTeX2e <2011/06/27>
+Loading CZ hyphenation patterns: Pavel Sevecek, v3, 1995
+Loading SK hyphenation patterns: Jana Chlebikova, 1992)
+! Emergency stop.
+<*> asdf.tex
+            
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 5 strings out of 494924
+ 132 string characters out of 3180887
+ 45884 words of memory out of 3000000
+ 3410 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 24 hyphenation exceptions out of 8191
+ 5i,0n,1p,1b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,0 +1,99 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[green]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.76]{geometry}
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Ing. Ján}
+\familyname{Valiska}
+\title{Curriculum vitae}               % optional, remove the line if not wanted
+\address{Vrbnica 49}{07216}    % optional, remove the line if not wanted
+\mobile{+421--949--749--124}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+%\email{jan.valiska@gmail.com}                      % optional, remove the line if not wanted
+\email{jan.valiska@gmail.com}
+%\homepage{homepage (optional)}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2011--presence}{University}{Faculty of electrotechnics and informatics}{TUKE}{\textit{3rd degree}}{Telecommunication}  % arguments 3 to 6 can be left empty
+\cventry{2009--2011}{University}{Faculty of electrotechnics and informatics}{TUKE}{\textit{2nd degree}}{Multimedia telecommunication}  % arguments 3 to 6 can be left empty
+\cventry{2005--2009}{University}{Faculty of electrotechnics and informatics}{TUKE}{\textit{1st degree}}{Telecommunication}  % arguments 3 to 6 can be left empty
+\cventry{2001--2005}{High school}{SPŠE}{\textit{Telecommunication technics}}{Michalovce}{}
+
+\section{Doctoral thesis}
+\cvline{Title}{\emph{Object tracking in video-sequences using Bayesian filters}}
+\cvline{Supervisor}{prof. Ing. Stanislav Marchevský, CSc.}
+\cvline{Description}{The work is focused on developing and testing of particle filters performance using various devices. Objects are represented using single color or color histograms.}
+
+\section{Work experiences}
+\cventry{2012--2015}{T-Systems s.r.o}{ICT Administrator}{Košice}{}{}{}
+
+\section{Projects experiences}
+\cventry{2013--presence}{UWB-SeNet}{Short-Range UWB Sensor Networks for Detection, Localization and Tracking of Moving Persons}{\textit{Software developing and testing of UWB radar system on 32-bit ARM architecture microprocessor boards}}{TUKE Košice}{}{}
+\cventry{2013--presence}{PerLoc-3D-UWB}{Persons Localization in 3D Under Emergency Event based on UWB Radar System}{TUKE Košice}{}{}
+\cventry{2011--2012}{CE II}{Center of Information and Communication Technologies for Knowledge Systems}{ITMS 26220120030}{TUKE Košice}{}{}
+
+\section{Teaching experiences}
+\cventry{2013}{SPŠE}{Two months experience in \textit{Informatics} course}{Arduino programming in C/C++ language}{Košice}{}{}
+\cventry{2012--2014}{T-Systems s.r.o}{Internal Linux/Bash programming trainer}{Košice}{}{}
+
+\section{Languages}
+\cvline{Engish}{writing form--advanced, speaking--intermediate}
+
+\section{Computer skills}
+\cvcomputer{Operating systems}{GNU Linux, MS Windows, Dos, FreeBSD}{Typography}{\LaTeX, MS Office, OpenOffice\\LibreOffice}
+\cvcomputer{Programming}{Bash/Zsh, C/C++, Python, Qt, Matlab, Ruby}{Web}{PHP, HTML, Nette Framework, Rails, jQuery, MySQL}
+\cvline{OS Linux}{10 years of experiences in \textit{Linux} operating systems.}
+\cvline{Web developing}{Creation of modern web applications using technologies like \textit{PHP Nette} and \textit{Ruby on Rails}.}
+\cvline{Scripting}{Operating system automation using Bash/Python scripts}
+
+\section{Skills in electronics}
+    \cvline{Embedded devices}{Developing of simple systems using Arduino or other 8-bit AVR based or 32-bit ARM devices. Realised projects: Church 3-digit numeric display(IR controlled), Rotating coder controlled timer with 2x16 character LCD display, IR controlled HIFI DAC using Raspberry Pi ARM board.}
+    \cvline{PCB}{Design and realisation of printed circuit boards using KiCAD software. Developing of PCB using negative photo-resist method}
+    \cvline{Simulations}{Experience in electronic circuits simulation using ngspice}
+
+\section{Competences and certificates}
+\cvlistitem[-]{Driving license, types: B1, B, AM}
+\cvlistitem[-]{Cisco Certified Network Assocciate(1-4.semester)}
+\cvlistitem[-]{T-Systems internal security certifications}
+
+\section{Interests}
+\cvline{Open-source software}{I like open-source software because of possibility of changing and tweaking the source code.}
+\cvline{Free time}{Family, literature, meaningful movie and soft-rock songs.}
+
+\section{Personal informations}
+\cvline{Date of birth}{\textit{14.10.1986} in Michalovce}
+\cvline{Family state}{married}
+
+%\nocite{*}
+
+\end{document}
