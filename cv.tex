@@ -1,11 +1,3 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
-
 \documentclass[11pt,a4paper]{moderncv}
 
 % moderncv themes
@@ -16,30 +8,29 @@
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\usepackage[scale=0.76]{geometry}
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
 % personal data
-\firstname{Ján}
+\firstname{Ing. Ján}
 \familyname{Valiska}
-\title{Životopis}               % optional, remove the line if not wanted
-\address{Vŕbnica 49}{07216}    % optional, remove the line if not wanted
-\mobile{+421--903--982--676}                    % optional, remove the line if not wanted
+\title{Curriculum vitae}               % optional, remove the line if not wanted
+\address{Vrbnica 49}{07216}    % optional, remove the line if not wanted
+\mobile{+421--949--749--124}                    % optional, remove the line if not wanted
 %\phone{phone (optional)}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 %\email{jan.valiska@gmail.com}                      % optional, remove the line if not wanted
-\email{jan.valiska@tuke.sk\\jan.valiska@gmail.com}
+\email{jan.valiska@gmail.com}
 %\homepage{homepage (optional)}                % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 %\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
-\makeatletter
-\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-\makeatother
+%\makeatletter
+%\makeatother
 
 % bibliography with mutiple entries
 %\usepackage{multibib}
@@ -53,52 +44,56 @@
 \maketitle
 
 \section{Vzdelanie}
-\cventry{2011--súčastnosť}{Vysoká škola}{Fakulta elektrotechniky a informatiky}{TUKE Košice}{\textit{3.stupeň}}{Telekomunikácie}  % arguments 3 to 6 can be left empty
-\cventry{2009--2011}{Vysoká škola}{Fakulta elektrotechniky a informatiky}{TUKE Košice}{\textit{2.stupeň}}{Multimediálne telekomunikácie}  % arguments 3 to 6 can be left empty
-\cventry{2005--2009}{Vysoká škola}{Fakulta elektrotechniky a informatiky}{TUKE Košice}{\textit{1.stupeň}}{Telekomunikácie}  % arguments 3 to 6 can be left empty
-\cventry{2001--2005}{Stredná škola}{SPŠE}{Michalovce}{Oznamovacia technika}{}
-\cventry{1996--2001}{Základná škola}{CZŠ sv.Michala}{Michalovce}{\textit{2.stupeň}}{4--9. ročník}
-\cventry{1992--1996}{Základná škola}{ZŠ}{Vŕbnica}{\textit{1.stupeň}}{1--4.ročník}
+\cventry{2011--súčasnosť}{Technická univerzita v Košiciach}{Fakulta elektrotechniky a informatiky}{Odbor: Telekomunikácie}{\textit{Doktorandské štúdium}}{}
+\cventry{2009--2011}{Technická univerzita v Košiciach}{Fakulta elektrotechniky a informatiky}{Odbor: Multimediálne telekomunikácie}{\textit{Inžinierske štúdium}}{}
+\cventry{2005--2009}{Technická univerzita v Košiciach}{Fakulta elektrotechniky a informatiky}{Odbor: Telekomunikácie}{\textit{Bakalárske štúdium}}{}
+\cventry{2001--2005}{Stredná priemyselná škola elektrotechnická v Michalovciach}{\newline Odbor: Telekomunikačná technika}{}{}{}
 
-\section{Diplomová práca}
-\cvline{Názov}{\emph{Štruktúra tokov v MPEG-2}}
-\cvline{Vedúci práce}{Prof. Ing. Dušan Levický, CSc.}
-\cvline{Popis}{Práca popisuje základnú štruktúru transportného, programového,  paketizovaného elementárneho toku a štruktúru jednotlivých tabuliek v TS multiplexy štandardu MPEG-2}
+\section{Dizertačná práca}
+\cvline{Názov}{\emph{Príspevok k návrhu rýchlych časticových filtrov pre sledovanie objektov vo videosekvenciách}}
+\cvline{Školiteľ}{prof.~Ing.~Stanislav Marchevský,~CSc.}
+\cvline{Popis}{Práca je zameraná na vývoj časticových filtrov a hodnotenie rýchlosti a presnosti sledovania objektov vo videosekvenciách.}
 
-\section{Jazyky}
-\cvline{Anglický jazyk}{pokročilý--technická angličtina}
+\section{Pracovné skúsenosti}
+\cventry{2012--2015}{T-Systems s.r.o}{ICT Administrátor}{Košice}{}{}{}
 
+\section{Projekty}
+\cventry{2013--súčasnosť}{UWB-SeNet}{Short-Range UWB Sensor Networks for Detection, Localization and Tracking of Moving Persons}{\textit{Vývoj a testovanie softvéru UWB radarového systému na 32-bitovej architektúre ARM}}{TUKE Košice}{}{}
+\cventry{2013--súčasnosť}{PerLoc-3D-UWB}{Persons Localization in 3D Under Emergency Event based on UWB Radar System}{TUKE Košice}{}{}
+\cventry{2011--2012}{CE II}{Rozvoj Centra informačných a komunikačných technológií pre znalostné systémy}{ITMS 26220120030}{TUKE Košice}{}{}
 
-\section{Počitačové znalosti}
-\cvcomputer{Operačné systémy}{GNU Linux, MS Windows, Dos, FreeBSD}{Typografia}{\LaTeX, MS Office, OpenOffice}
-\cvcomputer{Programovanie}{Bash/Zsh, Python, C/C++, Qt, Matlab, Ruby, Perl}{Tvorba webu}{PHP, Nette Framework, HTML, jQuery, MySQL}
+\section{Pedagogické skúsenosti}
+\cventry{2013}{SPŠE}{Výučba predmetu \textit{Informatika}}{Programovanie vývojovej dosky Arduino s použitím jazyka C/C++}{Košice}{}{}
+\cventry{2012--2014}{T-Systems s.r.o}{Interný školiteľ programovania v jazyku Bash}{Košice}{}{}
 
-\section{Oprávnenia a certifikáty}
-\cvlistitem[-]{Vodičský preukaz typu: B1, B, AM}
+\section{Cudzie jazyky}
+\cvline{Angličtina}{B1 - mierne pokročilý}
+
+\section{Počitačové zručnosti}
+\cvcomputer{Operačné systému}{GNU Linux, MS Windows, Dos, FreeBSD}{Typografia}{\LaTeX, MS Office, OpenOffice\\LibreOffice}
+\cvcomputer{Programovanie}{Bash/Zsh, C/C++, Python, Qt, Matlab, Ruby}{Web}{PHP, HTML, Nette Framework, Rails, jQuery, MySQL}
+\cvline{OS Linux}{10 ročná prax v používaní a administrácií systému}
+\cvline{Vývoj webu}{Tvorenie moderných web aplikácií založených na technológiách ako \textit{PHP Nette} alebo \textit{Ruby on Rails}.}
+\cvline{Skriptovanie}{Automatizácia rôznych výpočtových úkonov pomocou Bash/Python skriptov}
+
+\section{Skúsenosti v elektronike}
+\cvline{Vložené zariadenia}{Vývoj jednoduchých zariadení pomocou kitu Arduino alebo iných 8-bitových AVR mikroprocesorov. Realizované projekty: Trojmiestný numerický displej s infračerveným riadením, Časovač riadený  rotačným kóderom s 2x16 znakovým LCD displejom, IR riadený HIFI digitálno analógový prevodník(DAC) s použitím Raspberry Pi ARM dosky.}
+\cvline{DPS}{Návrh dosiek plošných spojov pomocou softvéru KiCAD. Vytváranie dosiek DPS pomocou metódy využívajúcej negatívny fotorezist.}
+\cvline{Simulácie}{Skúsenosť so simuláciou elektronických obvodov pomocou programu ngspice.}
+
+\section{Kompetencie a certifikáty}
+\cvlistitem[-]{Vodičský preukaz, typ: B1, B, AM}
 \cvlistitem[-]{Cisco Certified Network Assocciate(1-4.semester)}
+\cvlistitem[-]{T-Systems internal security certifications}
 
-\newpage
-\section{Oblasť štúdia}
-\cvline{Téma dizertačnej práce}{Implementácia rôznych metód pre sledovanie objektov vo videosekvenciách na báze \emph{Bayesovských filtrov} a testovanie ich robustnosti voči chybám vo videosekvenciách.}
-\cvline{Modelovanie kanálov}{Simulovanie reálnych drôtových a bezdrôtových sieti, pomocou jadrového modulu netem v operačnom systéme \emph{Linux}.}
-
-\section{Záujmy}
-\cvline{OS Linux}{Dlhoročné skúsenosti s operačným systémom \emph{Linux}.
-Tvorba vlastných pomocných skriptov/programov v \emph{Bash}, \emph{Python}, a \emph{C/C++} jazyku. Automatizácia procesov. Uľahčovanie si periodicky opakujúcich sa úloh, procesov a pod\dots}
-\cvline{Tvorba webových stránok}{Najradšej využívam moderné technológie a frameworky, hlavne \textit{PHP Nette} a \textit{jQuery}.}
-\cvline{Otvorený softvér}{Propagujem otvorený softvér, ktorý si podľa môjho názoru
-vystačí nielen so základnými požiadavkami.}
-\cvline{Počitačové siete}{Záujem o rozvíjanie vedomostí v tejto oblasti a štúdium \emph{CCNP}.}
-\cvline{Voľný čas}{Rodina, literatúra, zmysluplný film.}
+\section{Záľuby}
+\cvline{Open-source softvér}{Mám rád otvorený softvér pre jeho možnosť zmeny a doplnenia zdrojového kódu.}
+\cvline{Voľný čas}{Rodina, literatúra, dobrý film a hudba(soft-rock, blues)}
 
 \section{Osobné informácie}
-\cvline{Dátum narodenia}{\textit{14.10.1986} v Michalovciach}
-\cvline{Zdravotný stav}{dobrý}
-\cvline{Rodinný stav}{slobodný, bezdetný}
+\cvline{Dátum narodenia}{\textit{14.10.1986} Michalovce}
+\cvline{Rodinný stav}{ženatý}
 
 %\nocite{*}
 
 \end{document}
-
-
-%% end of file `template_en.tex'.
