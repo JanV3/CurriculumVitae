@@ -2,7 +2,6 @@
 
 % moderncv themes
 \moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-%\moderncvtheme[green]{classic}                % idem
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
@@ -10,11 +9,11 @@
 % adjust the page margins
 \usepackage[scale=0.76]{geometry}
 \setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
-%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{9cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
 % personal data
-\firstname{Ing. Ján}
+\firstname{Ján}
 \familyname{Valiska}
 \title{Curriculum vitae}               % optional, remove the line if not wanted
 \address{Vrbnica 49}{07216}    % optional, remove the line if not wanted
@@ -22,9 +21,10 @@
 %\phone{phone (optional)}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 %\email{jan.valiska@gmail.com}                      % optional, remove the line if not wanted
+\homepage{https://git.vihorlat.org/janko}                % optional, remove the line if not wanted
 \email{jan.valiska@gmail.com}
-%\homepage{homepage (optional)}                % optional, remove the line if not wanted
-%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt][0.01pt]{valiska.jpg}
+%\extrainfo{Pekny krasny ja...} % optional, remove the line if not wanted
 %\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
 
@@ -43,56 +43,108 @@
 \begin{document}
 \maketitle
 
-\section{Vzdelanie}
-\cventry{2011--súčasnosť}{Technická univerzita v Košiciach}{Fakulta elektrotechniky a informatiky}{Odbor: Telekomunikácie}{\textit{Doktorandské štúdium}}{}
-\cventry{2009--2011}{Technická univerzita v Košiciach}{Fakulta elektrotechniky a informatiky}{Odbor: Multimediálne telekomunikácie}{\textit{Inžinierske štúdium}}{}
-\cventry{2005--2009}{Technická univerzita v Košiciach}{Fakulta elektrotechniky a informatiky}{Odbor: Telekomunikácie}{\textit{Bakalárske štúdium}}{}
-\cventry{2001--2005}{Stredná priemyselná škola elektrotechnická v Michalovciach}{\newline Odbor: Telekomunikačná technika}{}{}{}
+\section{Work experiences}
+\cventry{2015--presence}{Kybernetika s.r.o}{Programmer/Analyst}{Košice}{}{}{}
+\cventry{2012--2015}{T-Systems s.r.o}{ICT Administrator}{Košice}{}{}{}
 
-\section{Dizertačná práca}
-\cvline{Názov}{\emph{Príspevok k návrhu rýchlych časticových filtrov pre sledovanie objektov vo videosekvenciách}}
-\cvline{Školiteľ}{prof.~Ing.~Stanislav Marchevský,~CSc.}
-\cvline{Popis}{Práca je zameraná na vývoj časticových filtrov a hodnotenie rýchlosti a presnosti sledovania objektov vo videosekvenciách.}
+\section{Software projects}
+\cvline{2015--2017}{
+    \textbf{Quality check of forgings} -- Software for checking geometric parameters of forgings.
+    Used technologies:
+    \begin{itemize}
+        \item CUDA, PCL, VTK, Eigen, OpenCV
+        \item TCP/IP using \texttt{boost::asio}
+        \item Oracle DB
+        \item SICK 3D sensors
+    \end{itemize}
+}
 
-\section{Pracovné skúsenosti}
-\cventry{2012--2015}{T-Systems s.r.o}{ICT Administrátor}{Košice}{}{}{}
+\cvline{2016--2016}{
+    \textbf{Quality check of piezoelements} -- Software for checking of salience and thickness of piezoelement.
+    Used technologies:
+    \begin{itemize}
+        \item CUDA, PCL, VTK, Eigen,
+        \item TCP/IP using \texttt{boost::asio}
+        \item Keyence 3D sensor
+    \end{itemize}
+}
 
-\section{Projekty}
-\cventry{2013--súčasnosť}{UWB-SeNet}{Short-Range UWB Sensor Networks for Detection, Localization and Tracking of Moving Persons}{\textit{Vývoj a testovanie softvéru UWB radarového systému na 32-bitovej architektúre ARM}}{TUKE Košice}{}{}
-\cventry{2013--súčasnosť}{PerLoc-3D-UWB}{Persons Localization in 3D Under Emergency Event based on UWB Radar System}{TUKE Košice}{}{}
-\cventry{2011--2012}{CE II}{Rozvoj Centra informačných a komunikačných technológií pre znalostné systémy}{ITMS 26220120030}{TUKE Košice}{}{}
+\cvline{2016--2016}{
+    \textbf{Videograbber} -- The software that records videosequence from slow motion industry camera.
+    Used technologies:
+    \begin{itemize}
+        \item C++
+        \item TCP/IP using Windows API
+        \item OpenCV
+        \item Allied Vision sensors
+    \end{itemize}
+}
 
-\section{Pedagogické skúsenosti}
-\cventry{2013}{SPŠE}{Výučba predmetu \textit{Informatika}}{Programovanie vývojovej dosky Arduino s použitím jazyka C/C++}{Košice}{}{}
-\cventry{2012--2014}{T-Systems s.r.o}{Interný školiteľ programovania v jazyku Bash}{Košice}{}{}
+\cvline{2015--2015}{
+    \textbf{TVA Marker} - The software recognizes text marked on metal coils from both top and side view.
+    Used technologies:
+    \begin{itemize}
+        \item C++
+        \item TCP/IP
+        \item OpenCV
+        \item Allied Vision sensors
+    \end{itemize}
+}
 
-\section{Cudzie jazyky}
-\cvline{Angličtina}{B1 - mierne pokročilý}
+\section{Education}
+\cventry{2011--2015}{Doctoral degree}{FEI TUKE}{Košice}{Telecommunication}{}  % arguments 3 to 6 can be left empty
+\cventry{2009--2011}{Master degree}{FEI TUKE}{Košice}{Multimedia telecommunication}{}  % arguments 3 to 6 can be left empty
+\cventry{2005--2009}{Bachelor's degree}{FEI TUKE}{Košice}{Telecommunication}{}  % arguments 3 to 6 can be left empty
+\cventry{2001--2005}{High school}{SPŠE}{Michalovce}{Telecommunication technics}{}
 
-\section{Počitačové zručnosti}
-\cvcomputer{Operačné systému}{GNU Linux, MS Windows, Dos, FreeBSD}{Typografia}{\LaTeX, MS Office, OpenOffice\\LibreOffice}
-\cvcomputer{Programovanie}{Bash/Zsh, C/C++, Python, Qt, Matlab, Ruby}{Web}{PHP, HTML, Nette Framework, Rails, jQuery, MySQL}
-\cvline{OS Linux}{10 ročná prax v používaní a administrácií systému}
-\cvline{Vývoj webu}{Tvorenie moderných web aplikácií založených na technológiách ako \textit{PHP Nette} alebo \textit{Ruby on Rails}.}
-\cvline{Skriptovanie}{Automatizácia rôznych výpočtových úkonov pomocou Bash/Python skriptov}
+\section{Doctoral thesis}
+\cvline{Title}{\emph{Object tracking in video-sequences using Bayesian filters}}
+\cvline{Supervisor}{prof. Ing. Stanislav Marchevský, CSc.}
+\cvline{Description}{The work is focused on developing and testing of particle filters performance using various devices. Objects are represented using single color or color histograms.}
 
-\section{Skúsenosti v elektronike}
-\cvline{Vložené zariadenia}{Vývoj jednoduchých zariadení pomocou kitu Arduino alebo iných 8-bitových AVR mikroprocesorov. Realizované projekty: Trojmiestný numerický displej s infračerveným riadením, Časovač riadený  rotačným kóderom s 2x16 znakovým LCD displejom, IR riadený HIFI digitálno analógový prevodník(DAC) s použitím Raspberry Pi ARM dosky.}
-\cvline{DPS}{Návrh dosiek plošných spojov pomocou softvéru KiCAD. Vytváranie dosiek DPS pomocou metódy využívajúcej negatívny fotorezist.}
-\cvline{Simulácie}{Skúsenosť so simuláciou elektronických obvodov pomocou programu ngspice.}
+\section{Master thesis}
+\cvline{Title}{\emph{Analysis of MPEG-2 transport stream structure}}
+\cvline{Supervisor}{prof. Ing. Dušan Levický, CSc.}
+\cvline{Description}{The work is focused on developing and testing of the transport stream analyzer. Software was implemented in Python language using PyQT graphics library.}
 
-\section{Kompetencie a certifikáty}
-\cvlistitem[-]{Vodičský preukaz, typ: B1, B, AM}
-\cvlistitem[-]{Cisco Certified Network Assocciate(1-4.semester)}
-\cvlistitem[-]{T-Systems internal security certifications}
 
-\section{Záľuby}
-\cvline{Open-source softvér}{Mám rád otvorený softvér pre jeho možnosť zmeny a doplnenia zdrojového kódu.}
-\cvline{Voľný čas}{Rodina, literatúra, dobrý film a hudba(soft-rock, blues)}
+\section{University projects experiences}
+\cventry{2013--2015}{UWB-SeNet}{Short-Range UWB Sensor Networks for Detection, Localization and Tracking of Moving Persons}{\textit{Software developing and testing of UWB radar system on 32-bit ARM architecture microprocessor boards(Linux}}{TUKE Košice}{}{}
+\cventry{2013--2015}{PerLoc-3D-UWB}{Persons Localization in 3D Under Emergency Event based on UWB Radar System}{TUKE Košice}{}{}
+\cventry{2011--2012}{CE II}{Center of Information and Communication Technologies for Knowledge Systems}{ITMS 26220120030}{TUKE Košice}{}{}
 
-\section{Osobné informácie}
-\cvline{Dátum narodenia}{\textit{14.10.1986} Michalovce}
-\cvline{Rodinný stav}{ženatý}
+\section{Teaching experiences}
+\cventry{2013}{SPŠE}{Two months experience in \textit{Informatics} course}{Arduino programming in C/C++ language}{Košice}{}{}
+\cventry{2012--2014}{T-Systems s.r.o}{Internal Linux/Bash programming trainer}{Košice}{}{}
+
+\section{Languages}
+\cvlanguage{English}{writing form--advanced, speaking--intermediate}{}
+
+\section{Computer skills}
+\cvcomputer{Operating systems}{GNU Linux, MS Windows, FreeDos}{Typography}{\LaTeX, LibreOffice}
+\cvcomputer{Programming}{C++11/14/17, Python, Bash, C, Matlab, Ruby, PHP, HTML, CSS, javascript}{Web frameworks}{jQuery, Nette Framework, Rails, Bootstrap}
+\cvcomputer{C++ Libraries}{OpenCV, Boost, Eigen, PCL, VTK, Qt, Oracle OCCI, Beast}{Project\&Version control}{CMake, git}
+\cvcomputer{Unite testing}{Catch, GTest}{IDE/Editors}{Vim/Neovim, QtCreator, CodeLite, Visual Studio 2010/2015, Atmel Studio}
+\cvcomputer{Databases}{Oracle, MariaDB, MySQL, MS SQL}{}{}
+\cvline{OS Linux}{12 years of experiences in \textit{Linux} operating systems.}
+\cvline{Scripting}{Operating system automation using Bash/Python scripts}
+
+\section{Skills in electronics}
+    \cvline{Embedded devices}{Developing of simple systems using Arduino or other 8--bit AVR based or 32--bit ARM devices. Realised projects: Church 3--digit numeric display(IR controlled), Rotating coder controlled timer with 2x16 character LCD display, IR controlled HIFI DAC using Raspberry Pi ARM board.}
+    \cvline{PCB}{Design and realisation of printed circuit boards using KiCAD software. Developing of PCB using negative photo--resist method}
+
+\section{Competences and certificates}
+\cvlistitem{Driving license, types: B1, B, AM}
+\cvlistitem{Cisco Certified Network Assocciate(1--4.semester)}
+\cvlistitem{T--Systems internal security certifications}
+
+\section{Interests}
+\cvline{Open--source software}{I like open--source software.}
+\cvline{Free time}{Family, literature, meaningful movie and soft--rock songs.}
+
+\section{Personal informations}
+\cvline{Date of birth}{\textit{14.10.1986} in Michalovce}
+\cvline{Family state}{married}
 
 %\nocite{*}
 
